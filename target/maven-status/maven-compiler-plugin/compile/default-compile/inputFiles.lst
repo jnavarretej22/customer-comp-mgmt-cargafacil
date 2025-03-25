@@ -1,40 +1,48 @@
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/CustomerCompMgmtCargafacilApplication.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/JwtRequestFilter.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/JwtUtil.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/SecurityConfig.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/WebSocketConfig.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/AdminController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/AuthController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/ClientController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/CooperativeController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/DriverController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/TrackingController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/TripController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/UserController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/VehicleController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/WebSocketController.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/AuthRequest.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/AuthResponse.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/BoxType.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/MyUserDetails.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Tracking.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Trip.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/User.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/UserType.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Vehicle.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/VehicleType.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/parametro.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/BoxTypeRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/ParametroRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/TrackingRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/TripRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/UserRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/UserTypeRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/VehicleRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/VehicleTypeRepository.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/MyUserDetailsService.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/ParametroService.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/TrackingService.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/TripService.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/UserService.java
-/home/janavarrete/Documentos/workspace/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/VehicleService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/ParametroService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/VehicleRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/PaymentRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/AuthRequest.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/UserRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/UserService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/User.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/CustomerCompMgmtCargafacilApplication.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Merchandise.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/JwtUtil.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/JwtRequestFilter.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/MerchandiseRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/MyUserDetails.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/VehicleService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Tracking.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/TrackingController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/TripController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/BoxType.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/TrackingRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Trip.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/parametro.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/AdminController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/WebSocketConfig.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/MyUserDetailsService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/MerchandiseController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/ClientController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/ParametroRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/VehicleController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/AuthController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/TrackingService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/PaymentController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/TripRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/VehicleTypeRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/TripService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/WebSocketController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/PaymentService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/config/SecurityConfig.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/UserController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/VehicleType.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/BoxTypeRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/UserType.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/AuthResponse.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/repository/UserTypeRepository.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Payment.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/service/MerchandiseService.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/CooperativeController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/controller/DriverController.java
+/home/janavarrete/Documentos/Proyectos/app cargafacil/customer-comp-mgmt-cargafacil/src/main/java/com/cargafacil/dto/Vehicle.java

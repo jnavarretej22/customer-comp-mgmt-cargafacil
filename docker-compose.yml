@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: cargafacil-app
+    ports:
+      - "8082:8082"  # Mapea el puerto 8082 (el mismo que en tu properties)
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/db_cargafacil
+      - SPRING_DATASOURCE_USERNAME=db_comercial
+      - SPRING_DATASOURCE_PASSWORD=Dudbe_c52d2F
+      - JWT_SECRET=kJ8$wq9tP4aBz7LxR2mN6fUvXy!Hs3Dp  # ¡Cambia esto en producción!
+      - SERVER_PORT=8082  # Sobrescribe server.port
+      - SERVER_SERVLET_CONTEXT_PATH=/customer/mgmt/cargafacil
+    depends_on:
+      - db
+    networks:
+      - cargafacil-network
+    restart: unless-stopped  # Reinicia automáticamente si falla
+
+  db:
+    image: postgres:15-alpine
+    container_name: cargafacil-db
+    environment:
+      - POSTGRES_DB=db_cargafacil
+      - POSTGRES_USER=db_comercial
+      - POSTGRES_PASSWORD=Dudbe_c52d2F
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Opcional: SQL inicial
+    ports:
+      - "5432:5432"  # Expone PostgreSQL (solo para desarrollo)
+    networks:
+      - cargafacil-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U db_comercial -d db_cargafacil"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+
+networks:
+  cargafacil-network:
+    driver: bridge
