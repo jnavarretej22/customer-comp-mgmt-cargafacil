@@ -35,7 +35,7 @@ public class MyUserDetailsService implements UserDetailsService {
         }
 
         // Retornar el rol (suponiendo que el campo es 'tipoUsuario')
-        return usuario.getTipoUsuario().getTipo();  // Asegúrate de que 'tipoUsuario' es el nombre del campo que contiene el rol
+        return usuario.getTipoUsuario().getName();  // Asegúrate de que 'tipoUsuario' es el nombre del campo que contiene el rol
     }
 
 }

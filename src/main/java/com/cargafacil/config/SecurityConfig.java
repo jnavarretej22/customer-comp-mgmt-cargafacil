@@ -22,6 +22,7 @@ public class SecurityConfig {
         http.csrf().disable()
             .authorizeHttpRequests()
             .requestMatchers("/login").permitAll()
+            .requestMatchers("/user-types/**").permitAll()
             .requestMatchers("/user/**").permitAll()
             .requestMatchers("/client/**").hasAuthority("ROLE_Cliente")
             .requestMatchers("/tracking/**").hasAuthority("ROLE_Cliente")

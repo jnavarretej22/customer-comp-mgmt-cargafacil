@@ -18,7 +18,7 @@ public class MyUserDetails implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         // Asumimos que tipoUsuario tiene un método getTipo() que devuelve un String
-        return Collections.singletonList(new SimpleGrantedAuthority(usuario.getTipoUsuario().getTipo()));
+        return Collections.singletonList(new SimpleGrantedAuthority(usuario.getTipoUsuario().getName()));
     }
 
 

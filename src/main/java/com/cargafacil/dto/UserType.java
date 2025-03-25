@@ -1,9 +1,9 @@
 package com.cargafacil.dto;
 
-import java.util.List;
-
 import jakarta.persistence.*;
 import lombok.Data;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tipo_usuario")
@@ -15,12 +15,19 @@ public class UserType {
     @Column(name = "tipo_usuario_id")
     private Integer id;
 
-    @Column(name = "nombre_tipo_usuario", nullable = false, unique = true)
-    private String tipo; // puede ser "cliente", "chofer", etc.
-    
-    public String getTipo() {
-        return tipo;
-    }
+    @Column(name = "nombre_tipo_usuario", nullable = false)
+    private String name;
+
+    @Column(name = "descripcion")
+    private String description;
+
+    @Column(name = "estado", nullable = false)
+    private String state = "activo";
+
+    @Column(name = "fecha_creacion", nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+
+    @Column(name = "fecha_actualizacion", nullable = false)
+    private LocalDateTime updatedAt;
 
 }
-
