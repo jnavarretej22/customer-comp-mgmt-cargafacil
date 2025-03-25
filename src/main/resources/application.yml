@@ -1,14 +1,59 @@
 spring:
+  application:
+    name: customer-comp-mgmt-cargafacil
+  
   datasource:
-    url: ${DATABASE_URL}  # Render inyectará esta variable automáticamente
+    url: ${DATABASE_URL}  # Railway inyectará esta variable automáticamente
     driver-class-name: org.postgresql.Driver
-    username: ${DATABASE_USER}
+    username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
-
+    hikari:
+      maximum-pool-size: 10  # Ajusta según los recursos de Railway
+  
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update  # En producción considera usar 'validate'
+    show-sql: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: false
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://your-issuer-url  # Si usas OAuth2
+          jwk-set-uri: https://your-jwk-set-uri
+
+server:
+  port: ${PORT:8080}  # Railway asigna el puerto automáticamente
+  servlet:
+    context-path: /customer/mgmt/cargafacil  # Opcional, ver nota abajo
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+
+jwt:
+  secret: ${JWT_SECRET}  # Configurar en variables de entorno de Railway
+  expiration: 86400000  # 24 horas en milisegundos
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+  file:
+    name: application.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
