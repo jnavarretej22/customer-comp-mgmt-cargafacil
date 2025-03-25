@@ -24,6 +24,7 @@ public class SecurityConfig {
             .requestMatchers("/login").permitAll()
             .requestMatchers("/user-types/**").permitAll()
             .requestMatchers("/user/**").permitAll()
+            .requestMatchers("/parametros/**").permitAll()
             .requestMatchers("/client/**").hasAuthority("ROLE_Cliente")
             .requestMatchers("/tracking/**").hasAuthority("ROLE_Cliente")
             .requestMatchers("/trip/**").hasAuthority("ROLE_Cliente")
